@@ -135,9 +135,10 @@ int main()
 	
 	  printf("### Cartório da EBAC ### \n\n");// inicio do menu
 	  printf("escolha apção desejada do menu:\n\n");
- 	  printf("\t1 Registra nomes\n\n");
-	  printf("\t2 Consultar nomes\n\n");
-	  printf("\t3 Deletar nomes\n\n");
+ 	  printf("\t1 - Registra nomes\n\n");
+	  printf("\t2 - Consultar nomes\n\n");
+	  printf("\t3 - Deletar nomes\n\n");
+	  printf("\t4 - Sair do sistema\n\n");
 	  printf("Opção:");// fim do menu
 
       scanf("%d", &opcao);// armazenando as informação do usuario
@@ -157,9 +158,14 @@ int main()
    	    case 3:
    	    deletar();
    	    break;
+   	    
+   	    case 4:
+   	    printf("Obrigado por utilizar o sistema!\n");
+   	    return 0;
+   	    break;
    	    	
    	    default:
-   	   	 printf("Essa opção não esta disponivel!\n");
+   	   	printf("Essa opção não esta disponivel!\n");
    	    system("pause");
    	    break;
 	  }
